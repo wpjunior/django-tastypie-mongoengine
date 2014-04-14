@@ -14,16 +14,18 @@ VERSION = '0.4.5'
 
 if __name__ == '__main__':
     setup(
-        name = 'django-tastypie-mongoengine',
-        version = VERSION,
-        description = "MongoEngine support for django-tastypie.",
-        long_description = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
-        author = 'wlan slovenija',
-        author_email = 'open@wlan-si.net',
-        url = 'https://github.com/wlanslovenija/django-tastypie-mongoengine',
-        keywords = "REST RESTful tastypie mongo mongodb mongoengine django",
-        license = 'AGPLv3',
-        packages = find_packages(exclude=('*.tests', '*.tests.*', 'tests.*', 'tests')),
+        name='django-tastypie-mongoengine',
+        version=VERSION,
+        description="MongoEngine support for django-tastypie.",
+        long_description=open(
+            os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
+        author='wlan slovenija',
+        author_email='open@wlan-si.net',
+        url='https://github.com/wlanslovenija/django-tastypie-mongoengine',
+        keywords="REST RESTful tastypie mongo mongodb mongoengine django",
+        license='AGPLv3',
+        packages=find_packages(
+            exclude=('*.tests', '*.tests.*', 'tests.*', 'tests')),
         classifiers = (
             'Development Status :: 4 - Beta',
             'Environment :: Web Environment',
@@ -37,7 +39,7 @@ if __name__ == '__main__':
         install_requires = (
             'Django>=1.4',
             'django-tastypie>=0.9.12,<=0.10.0',
-            'mongoengine>=0.8.1,<0.8.2',
+            'mongoengine>=0.8.1',
             'python-dateutil>=2.1',
             'lxml',
             'defusedxml',
@@ -49,7 +51,7 @@ if __name__ == '__main__':
         tests_require = (
             'Django>=1.4',
             'django-tastypie>=0.9.12,<=0.10.0',
-            'mongoengine>=0.8.1,<0.8.2',
+            'mongoengine>=0.8.1',
             'python-dateutil>=2.1',
             'lxml',
             'defusedxml',
